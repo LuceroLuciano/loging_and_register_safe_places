@@ -6,7 +6,19 @@ const Registro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí se puede implementar la lógica para enviar los datos del formulario a un servidor, pero no se como xd
+    console.log('Nombre de usuario:', usuario);
+    console.log('Contraseña:', password);
+    /*
+    fetch('/registro', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ usuario, password })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error)); */
   };
 
   return (
